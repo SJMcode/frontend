@@ -63,7 +63,7 @@ const App = () => {
           <img
             alt="profile"
             className="rounded-full w-64 h-64 mx-2 object-cover border-4 border-cyan-100 hover:border-cyan-300 transition-all duration-500 hover:scale-105"
-            src="./src/img/prof_pic_dec_24.jpg"
+            src="public/prof_pic_dec_24.jpg"
           />
           <div className="mt-6 md:mt-0 md:ml-6">
             <h5 className="text-2xl text-cyan-900 border-b-2 border-slate-300 pb-2 font-semibold">
