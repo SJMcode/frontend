@@ -20,9 +20,9 @@ const App = () => {
   const getData = async () => {
     try {
       const [educationResponse, workResponse, portfolioResponse] = await Promise.all([
-        fetch("api/education/"),
-        fetch("api/work/"),
-        fetch("api/portfolio/")
+        fetch("https://squid-app-qgori.ondigitalocean.app/education/"),
+        fetch("https://squid-app-qgori.ondigitalocean.app/work/"),
+        fetch("https://squid-app-qgori.ondigitalocean.app/portfolio/")
       ]);
       
       const [educationData, workData, portfolioData] = await Promise.all([
