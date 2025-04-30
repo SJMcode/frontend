@@ -20,9 +20,9 @@ const App = () => {
   const getData = async () => {
     try {
       const [educationResponse, workResponse, portfolioResponse] = await Promise.all([
-        fetch("/education/"),
-        fetch("/work/"),
-        fetch("/portfolio/")
+        fetch("api/education/"),
+        fetch("api/work/"),
+        fetch("api/portfolio/")
       ]);
       
       const [educationData, workData, portfolioData] = await Promise.all([
@@ -63,7 +63,7 @@ const App = () => {
           <img
             alt="profile"
             className="rounded-full w-64 h-64 mx-2 object-cover border-4 border-cyan-100 hover:border-cyan-300 transition-all duration-500 hover:scale-105"
-            src="public/prof_pic_dec_24.jpg"
+            src="public/images/prof_pic_dec_24.jpg"
           />
           <div className="mt-6 md:mt-0 md:ml-6">
             <h5 className="text-2xl text-cyan-900 border-b-2 border-slate-300 pb-2 font-semibold">
